@@ -124,6 +124,7 @@
         },
 		"Alacritty.Scrolling": {
 			"type": "object",
+			"additionalProperties": false,
 			"properties": {
 				"history": {
 					"type": "integer",
@@ -136,8 +137,7 @@
 					"type": "integer",
 					"default": 3
 				}
-			},
-			"additionalProperties": false
+			}
 		},
 		"Alacritty.Font": {
 			"type": "object",
@@ -593,10 +593,6 @@
 		},
 		"selection": {
 			"$ref": "#/definitions/Alacritty.Selection"
-		},
-		"alt_send_esc": {
-			"type": "boolean",
-			"description": "Send ESC (\\x1b) before characters when alt is pressed."
 		},
 		"ipc_socket": {
 			"type": "boolean",
